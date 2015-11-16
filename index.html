@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 <head lang="en">
     <meta charset="UTF-8">
 
@@ -7,12 +7,34 @@
     <link rel="stylesheet" type="text/css" href="css/wwyd.css">
 
     <title>What Would Yeezus Do?</title>
+
+    <meta property="og:url"           content="http://whatwouldyeezusdo.com/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="What Would Yeezus Do?" />
+    <meta property="og:description"   content="When in doubt, think WWYD? Random Kanye West videos delivered to you." />
 </head>
 <body>
-    <div id="fb-root"></div>
+   <div id="fb-root"></div>
+
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : '423917774450092',
+         xfbml      : true,
+         version    : 'v2.5'
+       });
+     };
+     
+     (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+   </script>
 
     <div class="container">
-
         <div id="header">
             <h2>WHAT WOULD YEEZUS DO?</h2>
             <p>When in doubt, think #WWYD. Enjoy these random Kanye West music videos.</p>
@@ -48,16 +70,7 @@
         }
         (document, 'script', 'twitter-wjs');
     </script>
-
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=423917774450092&version=v2.3";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-
+   
     <script src="https://www.youtube.com/player_api"></script>    
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
@@ -94,7 +107,7 @@
       ,{ title: "Blessings", link: "M6t47RI4bns" }
       ,{ title: "No Church In The Wild", link: "FJt7gNi3Nr4" }
       ,{ title: "Bound 2", link: "BBAtAM7vtgc" }
-      ,{ title: "FourFiveSeconds", link: "swRgOrKhP8M" }
+      ,{ title: "FourFiveSeconds", link: "v=kt0g4dWxEBo" }
       ,{ title: "All Day", link: "_ABk7TmjnVk" }
       ,{ title: "Knock You Down", link: "p_RqWocthcc" }
       ,{ title: "American Boy", link: "Ic5vxw3eijY" }
@@ -120,7 +133,7 @@
       ,{ title: "Number One", link: "mCAYStI0_EY" }
       ,{ title: "Kinda Like A Big Deal", link: "3LD98c-9fGY" }
       ,{ title: "Supernova", link: "UkZt7tZl2AE" }
-      ,{ title: "Anyone But Him", link: "qqDe_nAMr6U0" }
+      ,{ title: "Anyone But Him", link: "v=qqDe_nAMr6U" }
       ];
 
       // Copy yeezys array to use
